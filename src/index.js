@@ -4,16 +4,21 @@ import { Greeting, ObjetosHTML } from "./Greeting";
 import Product, { Navbar } from "./Product";
 import { Button } from "./Button";
 import { TaskCard } from "./Task";
+import { Post } from "./Post";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //Fragment, se usa para no poner etiquetas, se deja vacio las etiquetas <>
 root.render(
   <>
-  <TaskCard/>
-    <Button text="Click Me"/>
-    <Button text="Pay"/>
-    <Button text="" text2="Optional"/>
+    <TaskCard ready={false} />
+    <Post/>
+    <Button text="Click Me" />
+    <Button text="Pay" />
+    <Button text="" text2="Optional" />
+    <input id="hi" onChange={(e) => {
+      console.log(e.target.value)
+    }}></input>
     <Greeting />
     <ObjetosHTML />
     <Product

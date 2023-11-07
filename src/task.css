@@ -1,0 +1,13 @@
+.card {
+    background-color: aquamarine;
+    color: blue;
+    padding: 20px;
+}
+
+.bg-green{
+    background: green;
+}
+
+.bg-red{
+    background: red;
+}
