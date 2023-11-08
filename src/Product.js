@@ -14,7 +14,4 @@ function Product({ nameProduct, price, status, types, features }) {
   );
 }
 
-export function Navbar() {
-  return <nav></nav>;
-}
 export default Product;

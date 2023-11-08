@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Greeting, ObjetosHTML } from "./Greeting";
-import Product, { Navbar } from "./Product";
+import Product from "./Product";
 import { Button } from "./Button";
 import { TaskCard } from "./Task";
 import { Post } from "./Post";
+import { Array } from "./Arrays";
+import {Hooks, Hooks2} from "./Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -28,5 +30,8 @@ root.render(
       types={["morada", "verde", "amarilla"]}
       features={{ size: "medium", color: "red", cuantity: 8 }}
     />
+    <Array/>
+    <Hooks/>
+    <Hooks2/>
   </>
 );
