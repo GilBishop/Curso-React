@@ -14,15 +14,20 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     <TaskCard ready={false} />
+    <hr/>
     <Post/>
+    <hr/>
     <Button text="Click Me" />
     <Button text="Pay" />
     <Button text="" text2="Optional" />
     <input id="hi" onChange={(e) => {
       console.log(e.target.value)
     }}></input>
+    <hr/>
     <Greeting />
+    <hr/>
     <ObjetosHTML />
+    <hr/>
     <Product
       nameProduct="Uva"
       price={25}
@@ -30,8 +35,12 @@ root.render(
       types={["morada", "verde", "amarilla"]}
       features={{ size: "medium", color: "red", cuantity: 8 }}
     />
+    <hr/>
     <Array/>
+    <hr/>
     <Hooks/>
+    <hr/>
     <Hooks2/>
+    <hr/>
   </>
 );

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   IoMdAddCircle,
   IoIosRemoveCircle,
@@ -7,6 +7,11 @@ import {
 
 export const Hooks = () => {
   const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    console.log("render");
+  }, [counter]);
+
   return (
     <div>
       <h1>Contador: {counter}</h1>
@@ -40,9 +45,13 @@ export const Hooks2 = () => {
   return (
     <div>
       <input onChange={(e) => setMessage(e.target.value)} />
-      <button onClick={() => {
-        alert('Mensaje escrito: ' + message)
-      }}>Guardar</button>
+      <button
+        onClick={() => {
+          alert("Mensaje escrito: " + message);
+        }}
+      >
+        Guardar
+      </button>
     </div>
   );
 };
